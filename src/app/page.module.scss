@@ -1,29 +1,6 @@
 .wrapper {
   width: 100%;
-  .container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    .left {
-      width: 50%;
-      height: 100%;
-      background: #87ceeb;
-    }
-    .right {
-      width: 50%;
-      height: 100%;
-      .card {
-        width: 100%;
-        &:nth-child(1) {
-          background: #90ee90;
-        }
-        &:nth-child(2) {
-          background: #f4d738;
-        }
-        &:nth-child(3) {
-          background: #ffb2ef;
-        }
-      }
-    }
-  }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }

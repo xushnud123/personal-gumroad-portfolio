@@ -1,0 +1,25 @@
+.cursor {
+  width: 3rem;
+  height: 3rem;
+  border: 2px solid #000;
+  border-radius: 50%;
+  position: absolute;
+  z-index: 10000;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  transition: all 0.3s ease;
+  background: transparent;
+  transition-property: background, transform;
+  transform-origin: 100% 100%;
+}
+.mouse-grow {
+  transform: scale(4);
+  background: #fff;
+  z-index: 100;
+  mix-blend-mode: difference;
+}
+
+body {
+  background: #fff;
+  cursor: none;
+}
