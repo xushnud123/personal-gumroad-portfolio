@@ -2,6 +2,10 @@ import { ReactNode } from 'react';
 import { Metadata } from 'next';
 import localFont from 'next/font/local';
 
+import '@/global/global.css';
+import '@/global/cursor.css';
+import '@/style/color.scss';
+
 const getai = localFont({
   src: [
     {

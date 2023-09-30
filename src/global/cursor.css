@@ -9,17 +9,38 @@
   pointer-events: none;
   transition: all 0.3s ease;
   background: transparent;
-  transition-property: background, transform;
+  transition-property: background, transform, border-radius, width, height, border;
   transform-origin: 100% 100%;
+  box-sizing: border-box;
+  @media screen and (max-width: 750px) {
+    display: none;
+  }
 }
 .mouse-grow {
   transform: scale(4);
   background: #fff;
   z-index: 100;
   mix-blend-mode: difference;
+  @media screen and (max-width: 750px) {
+    transform: scale(2);
+  }
+}
+.mouse-li {
+  border-radius: 0;
+  transform: translate(0, 0);
+  height: 79px;
+  transition: all ease-out 0.25s;
 }
 
 body {
   background: #fff;
+  position: relative;
   cursor: none;
+  @media screen and (max-width: 750px) {
+    cursor: auto;
+  }
+}
+
+* {
+  -webkit-tap-highlight-color: transparent;
 }
