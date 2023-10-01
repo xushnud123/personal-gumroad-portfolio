@@ -6,15 +6,12 @@ import { Hero, Navbar } from './components';
 
 import cls from './page.module.scss';
 
-import { useWindowSize } from '@/hooks';
-
 const TopHero = dynamic(() => import('./components/top-hero/top-hero'));
 
 interface PageProps {}
 
 const Page: FC<PageProps> = () => {
   const mouse = useRef<HTMLDivElement>(null);
-  const size = useWindowSize();
   const [cursorObservation, setCursorObservation] = useState(true);
 
   useEffect(() => {
@@ -67,7 +64,7 @@ const Page: FC<PageProps> = () => {
 
   return (
     <>
-      {size[0] > 750 && <div ref={mouse} className="cursor" />}
+      {/* <div ref={mouse} className="cursor" /> */}
       <div className={cls.wrapper}>
         <div className={cls.top}>
           <TopHero />

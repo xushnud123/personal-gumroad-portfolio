@@ -46,7 +46,7 @@ export const metadata: Metadata = {
 };
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
-    <html lang="en" className={`${mabryPro.variable} ${getai.variable}`}>
+    <html lang="en" suppressHydrationWarning={true} className={`${mabryPro.variable} ${getai.variable}`}>
       <body>{children}</body>
     </html>
   );

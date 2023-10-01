@@ -6,6 +6,7 @@
   .top {
     display: flex;
     justify-content: center;
+    overflow: hidden;
     @media screen and (max-width: 750px) {
       display: none;
       overflow: hidden;

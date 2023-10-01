@@ -7,9 +7,9 @@
   z-index: 10000;
   transform: translate(-50%, -50%);
   pointer-events: none;
-  transition: all 0.3s ease;
+  transition: all 0.6s cubic-bezier(0, 0.1, 0.9, 1);
   background: transparent;
-  transition-property: background, transform, border-radius, width, height, border;
+  transition-property: background-color, transform, border-radius, width, height, border;
   transform-origin: 100% 100%;
   box-sizing: border-box;
   @media screen and (max-width: 750px) {
@@ -35,7 +35,7 @@
 body {
   background: #fff;
   position: relative;
-  cursor: none;
+  /* cursor: none; */
   @media screen and (max-width: 750px) {
     cursor: auto;
   }

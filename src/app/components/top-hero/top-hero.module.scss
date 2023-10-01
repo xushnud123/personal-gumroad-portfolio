@@ -14,10 +14,17 @@
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
+  cursor: pointer;
   background-image: url('../../../../public/images/Rectangle\ 15.webp');
   background-size: 100% 100%;
+  span {
+    display: inline-block;
+    -webkit-text-stroke: 1px navy;
+    text-stroke: 1px navy;
+  }
   @media screen and (max-width: 1220px) {
     padding: 0 10px;
+    font-size: 110px;
   }
   @media screen and (max-width: 960px) {
     font-size: 96px;
@@ -30,7 +37,10 @@
     margin: 0;
     background-size: cover;
   }
-  @media screen and (max-width: 450px) {
+  @media screen and (max-width: 550px) {
     font-size: 38px;
+  }
+  @media screen and (max-width: 450px) {
+    font-size: 32px;
   }
 }
